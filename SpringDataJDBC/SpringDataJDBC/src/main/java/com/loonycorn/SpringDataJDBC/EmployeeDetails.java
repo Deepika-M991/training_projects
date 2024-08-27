@@ -16,60 +16,66 @@ public class EmployeeDetails {
     private String lname;
     @Column("designation")
     private String designation;
-//default constructor
-    public EmployeeDetails(){
+
+    //default constructor
+    public EmployeeDetails() {
     }
-//parameterized constructor
-    public EmployeeDetails(Integer employeeId,String fname,String lname,String designation){
-        this.employeeId=employeeId;
-        this.designation=designation;
-        this.fname=fname;
-        this.lname=lname;
+
+    //parameterized constructor
+    public EmployeeDetails(Integer employeeId, String fname, String lname, String designation) {
+        this.employeeId = employeeId;
+        this.designation = designation;
+        this.fname = fname;
+        this.lname = lname;
     }
-//invoke create method
-    public static EmployeeDetails create(Integer employeeId,String fname,String lname,String designation){
-        return new EmployeeDetails(employeeId,fname,lname,designation);
+
+    //invoke create method
+    public static EmployeeDetails create(Integer employeeId, String fname, String lname, String designation) {
+        return new EmployeeDetails(employeeId, fname, lname, designation);
     }
-//populate the table
-    public  Integer getEmployeeId(){
+
+    //populate the table
+    public Integer getEmployeeId() {
         return employeeId;
     }
-    public String getfname(){
+
+    public String getfname() {
         return fname;
     }
-    public String getLname(){
+
+    public String getLname() {
         return lname;
     }
-    public String getDesignation(){
+
+    public String getDesignation() {
         return designation;
     }
 
     public void setDesignation(String designation) {
-        this.designation=designation;
+        this.designation = designation;
     }
 
     public void setFname(String fname) {
-        this.fname=fname;
+        this.fname = fname;
     }
 
     public void setLname(String lname) {
-        this.lname=lname;
+        this.lname = lname;
     }
 
     public void setEmployeeId(int employeeId) {
-        this.employeeId= employeeId;
+        this.employeeId = employeeId;
     }
 
     @Override
-    public String toString(){
-        return "EmployeeDetails{"+
-                "employeeId="+employeeId +
-                ",fname='"+fname +'\''+
-                ",lname='"+lname + '\''+
+    public String toString() {
+        return "EmployeeDetails{" +
+                "employeeId=" + employeeId +
+                ",fname='" + fname + '\'' +
+                ",lname='" + lname + '\'' +
                 ",designation=" + designation +
                 '}';
     }
-
-
-
 }
+
+
