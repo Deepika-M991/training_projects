@@ -27,6 +27,7 @@ public class JpaConfig {
 
         return dataSource;
     }
+//EntityManagerFactory: This is configured to use Hibernate as the JPA provider, automatically generate the database schema, and scan for entity classes in the specified package.
 
     //persist employee instances to MYSQL db
     @Bean
@@ -41,7 +42,7 @@ public class JpaConfig {
 
         return factory;
     }
-
+//Transaction Manager: This is set up to manage transactions for the entities managed by the EntityManagerFactory.
     //enable transactions against the employee entities
     @Bean
     public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory){
@@ -51,3 +52,4 @@ public class JpaConfig {
         return transactionManager;
     }
 }
+
