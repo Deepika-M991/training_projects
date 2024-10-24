@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
+
 public class javaEmailSenderApplication {
     public static void main(String[] args) {
 
@@ -45,7 +46,7 @@ public class javaEmailSenderApplication {
     private static void sendEmail(String htmlTable) {
         String fromEmail = "tharundeepika.m@conduent.com";
         String toEmail = "deepika77@gmail.com";
-        String password = "company@2024";
+        String password = "Ytrewq@2024";
 
         try {
             Properties props = new Properties();
