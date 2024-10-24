@@ -45,7 +45,7 @@ public class javaEmailSenderApplication {
     private static void sendEmail(String htmlTable) {
         String fromEmail = "tharundeepika.m@conduent.com";
         String toEmail = "deepika77@gmail.com";
-        String password = "Ytrewq@2024";
+        String password = "company@2024";
 
         try {
             Properties props = new Properties();
